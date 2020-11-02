@@ -9,6 +9,6 @@
 * or by sliding the screens to the right.
 
 <p align = left>
-<img width = "350" src = https://user-images.githubusercontent.com/67439169/97909067-e6fa9f00-1d47-11eb-9438-9a6d93690767.png">
+<img width = "350" src = "https://user-images.githubusercontent.com/67439169/97909067-e6fa9f00-1d47-11eb-9438-9a6d93690767.png">
 </p>
 
