@@ -32,8 +32,12 @@ class MenuController: UIViewController {
         
         tableView.register(MenuOptionCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.backgroundColor = UIColor.darkGray
+        tableView.separatorStyle = .none
+        tableView.rowHeight = 90
+    
         
         view.addSubview(tableView)
+        //constraints tableView
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
