@@ -15,7 +15,7 @@ class MenuOptionCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.backgroundColor = .blue
+        imageView.tintColor = .white
         return imageView
     }()
     
@@ -38,8 +38,8 @@ class MenuOptionCell: UITableViewCell {
         iconImageView.translatesAutoresizingMaskIntoConstraints =  false
         iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         iconImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 12).isActive = true
-        iconImageView.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        iconImageView.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        iconImageView.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        iconImageView.widthAnchor.constraint(equalToConstant: 25).isActive = true
         
         addSubview(descriptionLabel)
         descriptionLabel.translatesAutoresizingMaskIntoConstraints =  false

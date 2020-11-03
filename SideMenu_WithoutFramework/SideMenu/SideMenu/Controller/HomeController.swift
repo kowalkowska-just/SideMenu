@@ -25,7 +25,7 @@ class HomeController: UIViewController {
     //MARK: - Handlers
     
     @objc func handleMenuTaggle() {
-        delegate?.handleMenuTaggle()
+        delegate?.handleMenuTaggle(forMenuOption: nil)
         
     }
     

@@ -17,6 +17,7 @@
 		D112AB0B2550D32C00AB8C66 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB0A2550D32C00AB8C66 /* MenuController.swift */; };
 		D112AB0F2551944700AB8C66 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB0E2551944700AB8C66 /* Protocols.swift */; };
 		D112AB1225519E8500AB8C66 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1125519E8500AB8C66 /* MenuOptionCell.swift */; };
+		D112AB152551C61100AB8C66 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB142551C61100AB8C66 /* MenuOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D112AB0A2550D32C00AB8C66 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		D112AB0E2551944700AB8C66 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D112AB1125519E8500AB8C66 /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		D112AB142551C61100AB8C66 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		D112AB012550D28B00AB8C66 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D112AB142551C61100AB8C66 /* MenuOption.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				D112AAEE2550D27400AB8C66 /* SceneDelegate.swift in Sources */,
 				D112AB052550D2EE00AB8C66 /* ContainerController.swift in Sources */,
 				D112AB0F2551944700AB8C66 /* Protocols.swift in Sources */,
+				D112AB152551C61100AB8C66 /* MenuOption.swift in Sources */,
 				D112AB0B2550D32C00AB8C66 /* MenuController.swift in Sources */,
 				D112AB082550D31400AB8C66 /* HomeController.swift in Sources */,
 			);

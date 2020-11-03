@@ -7,6 +7,6 @@
 
 protocol HomeControllerDelegate {
     
-    func handleMenuTaggle()
+    func handleMenuTaggle(forMenuOption menuOption: MenuOption?)
     
 }
