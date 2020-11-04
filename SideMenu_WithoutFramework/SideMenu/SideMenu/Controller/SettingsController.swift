@@ -19,6 +19,7 @@ class SettingsController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configureTableView()
         configureUI()
     }
@@ -49,11 +50,10 @@ class SettingsController: UIViewController{
     
     func configureUI() {
         configureTableView()
-        
+        navigationController?.view.backgroundColor = UIColor(red: 55/255, green: 120/255, blue: 250/255, alpha: 1)
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = UIColor(red: 55/255, green: 120/255, blue: 250/255, alpha: 1)
         navigationItem.title = "Settings"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(handleDismiss))
         navigationItem.leftBarButtonItem?.tintColor = .white
@@ -62,13 +62,50 @@ class SettingsController: UIViewController{
 }
 
 extension SettingsController: UITableViewDelegate, UITableViewDataSource {
-        
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return SettingsSection.allCases.count
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        switch section {
+        case 0: return 2
+        case 1: return 3
+        default: return 0
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = UIColor(red: 55/255, green: 120/255, blue: 250/255, alpha: 1)
+        let title = UILabel()
+        title.font = UIFont.boldSystemFont(ofSize: 16)
+        title.textColor = .white
+        title.text = SettingsSection(rawValue: section)?.description
+        view.addSubview(title)
+        title.translatesAutoresizingMaskIntoConstraints = false
+        title.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        title.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SettingsCell
+        
+        switch indexPath.section {
+        case 0: cell.backgroundColor = .red
+        case 1: cell.backgroundColor = .blue
+        default: break
+        }
+        
         return cell
     }
         

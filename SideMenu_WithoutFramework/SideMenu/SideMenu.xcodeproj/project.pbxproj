@@ -21,6 +21,7 @@
 		D112AB1925520B6800AB8C66 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1825520B6800AB8C66 /* SettingsController.swift */; };
 		D112AB1C255233E900AB8C66 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1B255233E900AB8C66 /* SettingsCell.swift */; };
 		D112AB1F2552381000AB8C66 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1E2552381000AB8C66 /* UserInfoHeader.swift */; };
+		D16016402552CDF100C36409 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160163F2552CDF100C36409 /* SettingsSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D112AB1825520B6800AB8C66 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		D112AB1B255233E900AB8C66 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		D112AB1E2552381000AB8C66 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
+		D160163F2552CDF100C36409 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				D112AB142551C61100AB8C66 /* MenuOption.swift */,
+				D160163F2552CDF100C36409 /* SettingsSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16016402552CDF100C36409 /* SettingsSection.swift in Sources */,
 				D112AB1925520B6800AB8C66 /* SettingsController.swift in Sources */,
 				D112AB1225519E8500AB8C66 /* MenuOptionCell.swift in Sources */,
 				D112AAEC2550D27400AB8C66 /* AppDelegate.swift in Sources */,
