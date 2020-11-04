@@ -19,6 +19,8 @@
 		D112AB1225519E8500AB8C66 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1125519E8500AB8C66 /* MenuOptionCell.swift */; };
 		D112AB152551C61100AB8C66 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB142551C61100AB8C66 /* MenuOption.swift */; };
 		D112AB1925520B6800AB8C66 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1825520B6800AB8C66 /* SettingsController.swift */; };
+		D112AB1C255233E900AB8C66 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1B255233E900AB8C66 /* SettingsCell.swift */; };
+		D112AB1F2552381000AB8C66 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1E2552381000AB8C66 /* UserInfoHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D112AB1125519E8500AB8C66 /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 		D112AB142551C61100AB8C66 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		D112AB1825520B6800AB8C66 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		D112AB1B255233E900AB8C66 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		D112AB1E2552381000AB8C66 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				D112AB1125519E8500AB8C66 /* MenuOptionCell.swift */,
+				D112AB1B255233E900AB8C66 /* SettingsCell.swift */,
+				D112AB1E2552381000AB8C66 /* UserInfoHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,7 +196,9 @@
 				D112AB1925520B6800AB8C66 /* SettingsController.swift in Sources */,
 				D112AB1225519E8500AB8C66 /* MenuOptionCell.swift in Sources */,
 				D112AAEC2550D27400AB8C66 /* AppDelegate.swift in Sources */,
+				D112AB1F2552381000AB8C66 /* UserInfoHeader.swift in Sources */,
 				D112AAEE2550D27400AB8C66 /* SceneDelegate.swift in Sources */,
+				D112AB1C255233E900AB8C66 /* SettingsCell.swift in Sources */,
 				D112AB052550D2EE00AB8C66 /* ContainerController.swift in Sources */,
 				D112AB0F2551944700AB8C66 /* Protocols.swift in Sources */,
 				D112AB152551C61100AB8C66 /* MenuOption.swift in Sources */,
