@@ -86,7 +86,13 @@ class ContainerController: UIViewController {
         case .Profile: print("Show profile.")
         case .Inbox: print("Show inbox.")
         case .Notifications: print("Show notifications.")
-        case .Settings: print("Show settings.")
+        case .Settings:
+            let settingsController = SettingsController()
+            let navController = UINavigationController(rootViewController: settingsController)
+            navController.modalPresentationStyle = .fullScreen
+            present(navController, animated: true, completion: nil)
+            
+            view.addSubview(navController.view)
         }
     }
     

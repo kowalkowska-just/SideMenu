@@ -18,6 +18,7 @@
 		D112AB0F2551944700AB8C66 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB0E2551944700AB8C66 /* Protocols.swift */; };
 		D112AB1225519E8500AB8C66 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1125519E8500AB8C66 /* MenuOptionCell.swift */; };
 		D112AB152551C61100AB8C66 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB142551C61100AB8C66 /* MenuOption.swift */; };
+		D112AB1925520B6800AB8C66 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D112AB1825520B6800AB8C66 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D112AB0E2551944700AB8C66 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D112AB1125519E8500AB8C66 /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 		D112AB142551C61100AB8C66 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		D112AB1825520B6800AB8C66 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				D112AB042550D2EE00AB8C66 /* ContainerController.swift */,
 				D112AB072550D31400AB8C66 /* HomeController.swift */,
 				D112AB0A2550D32C00AB8C66 /* MenuController.swift */,
+				D112AB1825520B6800AB8C66 /* SettingsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D112AB1925520B6800AB8C66 /* SettingsController.swift in Sources */,
 				D112AB1225519E8500AB8C66 /* MenuOptionCell.swift in Sources */,
 				D112AAEC2550D27400AB8C66 /* AppDelegate.swift in Sources */,
 				D112AAEE2550D27400AB8C66 /* SceneDelegate.swift in Sources */,

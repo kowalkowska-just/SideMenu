@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  MenuOption.swift
 //  SideMenu
 //
 //  Created by Justyna Kowalkowska on 03/11/2020.
