@@ -8,6 +8,7 @@
 import UIKit
 
 enum SettingsSection: Int, CaseIterable, CustomStringConvertible {
+    
     case Social
     case Communication
     
@@ -21,10 +22,10 @@ enum SettingsSection: Int, CaseIterable, CustomStringConvertible {
 
 enum SocialOptions: Int, CaseIterable, SectionType {
     
-    var constainsSwitch: Bool { return false }
-    
     case EditProfile
     case LogOut
+    
+    var constainsSwitch: Bool { return false }
     
     var description: String {
         switch self {
@@ -36,6 +37,10 @@ enum SocialOptions: Int, CaseIterable, SectionType {
 
 enum ComminicationOptions: Int, CaseIterable, SectionType {
     
+    case Notifications
+    case Email
+    case ReportCrashes
+    
     var constainsSwitch: Bool {
         switch self {
         case .Notifications: return true
@@ -44,15 +49,11 @@ enum ComminicationOptions: Int, CaseIterable, SectionType {
         }
     }
     
-    case Notifications
-    case Email
-    case ReportCrashes
-    
     var description: String {
         switch self {
         case .Notifications: return "Notifications"
         case .Email: return "Email"
-        case .ReportCrashes: return "ReportCrashes"
+        case .ReportCrashes: return "Report Crashes"
         }
         
     }

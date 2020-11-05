@@ -19,8 +19,7 @@ class SettingsController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configureTableView()
+    
         configureUI()
     }
     
@@ -120,9 +119,10 @@ extension SettingsController: UITableViewDelegate, UITableViewDataSource {
         
         switch section {
         case .Social:
-            print(SocialOptions(rawValue: indexPath.row)?.description)
+            print(SocialOptions(rawValue: indexPath.row)?.description ?? "-")
         case .Communication:
-            print(ComminicationOptions(rawValue: indexPath.row)?.description)
+            print(ComminicationOptions(rawValue: indexPath.row)?.description ?? "-")
         }
     }
 }
+
