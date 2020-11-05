@@ -10,3 +10,9 @@ protocol HomeControllerDelegate {
     func handleMenuTaggle(forMenuOption menuOption: MenuOption?)
     
 }
+
+protocol SectionType: CustomStringConvertible {
+    
+    var constainsSwitch: Bool { get }
+    
+}

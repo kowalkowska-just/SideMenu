@@ -69,12 +69,12 @@ extension SettingsController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        guard let section = SettingsSection(rawValue: section) else { return 0 }
+
         switch section {
-        case 0: return 2
-        case 1: return 3
-        default: return 0
+        case .Social: return SocialOptions.allCases.count
+        case .Communication: return ComminicationOptions.allCases.count
         }
-        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -100,17 +100,29 @@ extension SettingsController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SettingsCell
         
-        switch indexPath.section {
-        case 0: cell.backgroundColor = .red
-        case 1: cell.backgroundColor = .blue
-        default: break
+        guard let section = SettingsSection(rawValue: indexPath.section) else { return UITableViewCell() }
+        
+        switch section {
+        case .Social:
+            let social = SocialOptions(rawValue: indexPath.row)
+            cell.sectionType = social
+        case .Communication:
+            let communication = ComminicationOptions(rawValue: indexPath.row)
+            cell.sectionType = communication
         }
         
         return cell
     }
         
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
-    }
         
+        guard let section = SettingsSection(rawValue: indexPath.section) else { return }
+        
+        switch section {
+        case .Social:
+            print(SocialOptions(rawValue: indexPath.row)?.description)
+        case .Communication:
+            print(ComminicationOptions(rawValue: indexPath.row)?.description)
+        }
+    }
 }
